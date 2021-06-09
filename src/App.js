@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import { Button, Navbar, Form, FormControl, Container, Col, Row, InputGroup, Spinner, Alert } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './estilos/index.css'
 import { useInvertirTexto } from './hooks'
 
-function App() {
+const App = () => {
   const [lista, setLista] = useState([])
   const [param, setParam] = useState({ texto: '', id: 0 })
   const [texto, setTexto] = useState('')
