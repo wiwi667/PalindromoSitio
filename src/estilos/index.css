@@ -1,10 +1,12 @@
-
 body {
     background-color:#E4E4E4
 }
 
 .nav {
-    background-color: #DF0002 !important
+    background-color: #DF0002 !important;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .form_row {
