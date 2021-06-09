@@ -5,7 +5,7 @@ import '../estilos/index.css'
 import { useInvertirTexto } from '../hooks'
 import { AlertaError, Resultados } from '../componentes/comunes'
 
-const App = () => {
+const Invertir = () => {
     const [lista, setLista] = useState([])
     const [param, setParam] = useState({ texto: '', id: 0 })
     const [texto, setTexto] = useState('')
@@ -56,4 +56,4 @@ const App = () => {
     )
 }
 
-export default App
+export default Invertir
