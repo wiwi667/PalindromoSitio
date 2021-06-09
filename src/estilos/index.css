@@ -1,0 +1,27 @@
+
+body {
+    background-color:#E4E4E4
+}
+
+.nav {
+    background-color: #DF0002 !important
+}
+
+.form_row {
+    display: flex;
+}
+
+.form {
+    width: 60%;
+}
+
+.boton {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.row_container {
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: #FFF;
+}
