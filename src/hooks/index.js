@@ -13,7 +13,7 @@ export const useInvertirTexto = (obj, onSucces) => {
                 setEstado({ ...INIT_STATE, ..._res })
                 if (_res.text) {
                     if (onSucces)
-                        onSucces(_res)
+                        onSucces({ ..._res, textoOriginal: texto })
                 }
             }
             catch (error) {
