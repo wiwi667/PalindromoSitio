@@ -3,80 +3,36 @@
 Es App cliente en React que permite enviar textos a la API creado con express [https://github.com/wiwi667/ToolBoxAPI](https://github.com/wiwi667/ToolBoxAPI) y muestra las respuestas del API desde la ultima a la primera.
 
 ## Descarga
-Para descargar ejecutar el siguiente conmando en el directorio deseado:
+Para descargar, ejecutar el siguiente comando en el directorio deseado:
 
 ### `git clone https://github.com/wiwi667/ToolBoxSitio.git ./ToolBoxFO/front`
 
+o si no se desea crear ninguna carpeta adicional, simplemente:
+### `git clone https://github.com/wiwi667/ToolBoxSitio.git`
+
 ## Instalación
-ingresar al directorio de descargar y ejecutar
+Ingresar al directorio de descarga `./ToolBoxFO/front` (si se crearon las carpetas ./ToolBoxFO/front) y ejecutar
 ### `npm i`
 
-## Nota
+**Nota:**
 Antes de poder ejecutar el front es necesario que ya se encuentre en ejecución el API [https://github.com/wiwi667/ToolBoxAPI](https://github.com/wiwi667/ToolBoxAPI)
 
+Al ingresar al link [http://localhost:3010/iecho?text=qaz](http://localhost:3010/iecho?text=qaz) 
+deberiamos tener una respuesta similar a `{"text":"zaq","palindrome":false}`
+
 ## Scripts habilitados
+En el projecto se puede correr:
 
-In the project directory, you can run:
+### `npm test`
+Valida que los métodos del API respondan correctamente
 
-### `yarn start`
+### `npm start`
+Levanta un sitio en el puerto 8080 al cual se puede validar con el siguiente link:
+[http://localhost:8080](http://localhost:8080) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm run build`
+Genera una versión empaquetada para publicar en el directorio de descarga `.ToolBoxFO/front/dist`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Nota:**
+Para que el sitio funcione desde otro computador es necesario modificar el archivo `.ToolBoxFO/front/src/constantes.index.js` y cambiar la constante `TOOLBOX_API` apuntando al servidor donde se encuentre corriendo el API ejm. `http://192.168.18.49:3010/`
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
