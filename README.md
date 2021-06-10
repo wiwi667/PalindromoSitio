@@ -1,8 +1,9 @@
-# Getting Started with Create React App
+# Choice Técnico (FRONT) Fernando Ordoñez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Es App cliente en React que permite enviar textos a la API creado con express [https://github.com/wiwi667/ToolBoxAPI](https://github.com/wiwi667/ToolBoxAPI) y muestra las respuestas del API desde la ultima a la primera.
 
-## Available Scripts
+
+## Scripts habilitados
 
 In the project directory, you can run:
 
