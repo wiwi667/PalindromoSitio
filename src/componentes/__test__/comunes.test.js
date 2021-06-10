@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react'
 import { AlertaError, Resultados } from '../comunes'
-import { invertirTexto } from '../../comunication'
 
 test('Debe renderizar la alerta', () => {
     render(<AlertaError error={'mensaje'} />)
@@ -24,16 +23,4 @@ test('Debe renderizar el palindromo', () => {
     render(<Resultados text={'abc123'} textoOriginal={'321cba'} palindrome />)
     const div = screen.getByTestId('palindrome')
     expect(div).toBeInTheDocument()
-})
-
-test('Debe llamar al API', async () => {
-    expect.assertions(1)
-    const data = await invertirTexto('qaz')
-    expect(data.text).toBe('zaq')
-})
-
-test('Debe validar que sea un palindromo', async () => {
-    expect.assertions(1)
-    const data = await invertirTexto('qazaq')
-    expect(data.palindrome).toBe(true)
 })
