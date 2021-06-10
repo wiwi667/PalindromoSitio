@@ -1,16 +1,18 @@
 import React from 'react'
-import { InputGroup, Alert, FormControl, Col } from 'react-bootstrap'
+import { InputGroup, Alert, FormControl, Col, Row } from 'react-bootstrap'
 
 export const AlertaError = props => {
     const { error } = props
     return (
         <>
             { error &&
-                <InputGroup className='mb-3' data-testid='alerta'>
-                    <Alert variant={'danger'}>
-                        <b className={'mx-1'}>Error:</b>{error}
-                    </Alert>
-                </InputGroup>
+                <Row data-testid='alerta'>
+                    <Col>
+                        <Alert variant={'danger'}>
+                            <b className={'mx-1'}>Error:</b>{error}
+                        </Alert>
+                    </Col>
+                </Row>
             }
         </>
     )

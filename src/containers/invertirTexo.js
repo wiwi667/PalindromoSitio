@@ -44,11 +44,15 @@ const Invertir = () => {
             </Navbar>
             <div>
                 <Container className='row_container'>
+                    <AlertaError {...estado} />
                     <Row className='justify-content-md-center my-1'>
-                        <AlertaError {...estado} />
-                        {lista.map((x, ix) => (
-                            <Resultados {...x}  key={ix}/>                            
-                        ))}
+                        <Col xs={12} md={2}><h3>Results:</h3></Col>
+                        <Col xs={12} md={8}>
+                            {lista.map((x, ix) => (
+                                <Resultados {...x} key={ix} />
+                            ))}
+                        </Col>
+                        <Col xs={0} md={2} />
                     </Row>
                 </Container>
             </div>
